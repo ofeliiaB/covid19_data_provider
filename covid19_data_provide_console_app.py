@@ -36,7 +36,7 @@ def total_covid_amount():
     querystring = {"format":"undefined"}
     headers = {
     'x-rapidapi-host': "covid-19-data.p.rapidapi.com",
-    'x-rapidapi-key': "953fcaf3b5mshcce9e313ebbfc41p1ae5ffjsncb5d84292712"
+    'x-rapidapi-key': "****privateAPI_KEY"
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     response_str = response.text
@@ -50,7 +50,7 @@ def total_per_country():
     querystring = {"format":"undefined","name": country_name}
     headers = {
     'x-rapidapi-host': "covid-19-data.p.rapidapi.com",
-    'x-rapidapi-key': "953fcaf3b5mshcce9e313ebbfc41p1ae5ffjsncb5d84292712"
+    'x-rapidapi-key': "****privateAPI_KEY"
     }
     
     response = requests.request("GET", url, headers=headers, params=querystring)
@@ -86,7 +86,7 @@ def country_amount():
         querystring = {"format":"undefined","name": country}
         headers = {
             'x-rapidapi-host': "covid-19-data.p.rapidapi.com",
-            'x-rapidapi-key': "953fcaf3b5mshcce9e313ebbfc41p1ae5ffjsncb5d84292712"
+            'x-rapidapi-key': "****privateAPI_KEY"
             }
         response = requests.request("GET", url, headers=headers, params=querystring)
         response_str = response.text
