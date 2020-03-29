@@ -12,7 +12,7 @@ def pretty(d, indent=0):
 
 def client_cli():
     choice = 1
-    print("Hello to Covid-19 Data Provider\n")
+    print("Welcome to Covid-19 Data Provider\n")
     while(choice != 0):
     
         choice = int(input(
